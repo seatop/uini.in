@@ -1,1 +1,1 @@
-***uini.in
+uini.in
