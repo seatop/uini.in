@@ -62,4 +62,9 @@
 ****
 三个或者三个以上的-或者*
 ```
+## 5.图片
+示例：
 
+![向日葵](http://b.hiphotos.baidu.com/image/h%3D300/sign=92afee66fd36afc3110c39658318eb85/908fa0ec08fa513db777cf78376d55fbb3fbd9b3.jpg)
+
+语法：
