@@ -32,7 +32,14 @@
 
 <div class="uk-container-small uk-align-center" uk-height-viewport="expand:true">	
 
-	
+	<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
 
 	
 
