@@ -1,6 +1,8 @@
 ---
 layout: post
 title: markdown syntax
+categories: [markdown]
+tags: [syntax]
 ---
 # markdown 语法
 ## 1.标题
