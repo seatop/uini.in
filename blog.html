@@ -13,7 +13,7 @@ title: blog
         {% for post in site.posts %}
         <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
 		<h3 class="uk-card-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-		 <p class="uk-text-meta uk-margin-remove-top"><time datetime="{{ post.date }}">{{ post.time | date_to_string }}</time></p>
+		 <p class="uk-text-meta uk-margin-remove-top"><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></p>
 		<p>{{ post.excerpt }}</p>
 		
         <p><a href="{{ post.url }}" class="uk-button uk-button-text">Read more</a></p>
