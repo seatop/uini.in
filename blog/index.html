@@ -1,0 +1,46 @@
+---
+layout: post
+title: blog
+---
+
+
+
+<div class="uk-container-small uk-align-center" uk-height-viewport="expand:true">	
+    
+	<div class="uk-child-width-expand uk-child-heigth-expend uk-grid-small" uk-grid>
+        
+    <div>
+        {% for post in site.posts %}
+        <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
+		<h3 class="uk-card-title"><a class="uk-link-heading" href="{{ post.url }}">{{ post.title }}</a></h3>
+		 <p class="uk-text-meta uk-margin-remove-top"><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></p>
+		<p>{{ post.excerpt }}</p>
+		
+        <p><a href="{{ post.url }}" class="uk-button uk-button-text">Read more</a></p>
+    
+		</div>
+         {% endfor %}
+
+		
+    </div>
+    
+    <div class="uk-width-1-3@m uk-visible@m">
+        <div class="uk-card uk-card-default uk-card-body">
+        <ul class="uk-nav uk-nav-default">
+        {% for category in site.categories %}
+        <li><a href="#">{{ category[0] }}</a></li>
+        {% endfor %}
+        </ul>
+        </div>
+    
+    </div>
+
+    
+    
+</div>
+
+</div>
+
+
+
+
