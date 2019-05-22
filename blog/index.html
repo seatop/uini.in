@@ -10,7 +10,7 @@ title: blog
 	<div class="uk-child-width-expand uk-child-heigth-expend uk-grid-small" uk-grid>
         
     <div>
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
         <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
 		<h3 class="uk-card-title"><a class="uk-link-heading" href="{{ post.url }}">{{ post.title }}</a></h3>
 		 <p class="uk-text-meta uk-margin-remove-top"><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></p>
