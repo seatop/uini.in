@@ -28,7 +28,11 @@ title: blog
         <div class="uk-card uk-card-default uk-card-body">
         <ul class="uk-nav uk-nav-default">
         {% if paginator.previous_page %}
-    <a href="/blog/page{{ paginator.previous_page }}" class="previous">Previous</a>
+        {% if paginator.previous_page == 1 %}
+            <a href="/blog/" class="previous">Previous</a>
+        {% else %}
+            <a href="/blog/page{{ paginator.previous_page }}" class="previous">Previous</a>
+        {% endif %}
   {% else %}
     <span class="previous">Previous</span>
   {% endif %}
