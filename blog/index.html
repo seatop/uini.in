@@ -34,13 +34,13 @@ title: blog
                 <li><a href="/blog/page{{ paginator.previous_page }}"><span class="uk-badge">上一页</a></span></a></li>
             {% endif %}
         {% else %}
-            <li><span class="uk-badge">没有了</span></li>
+            <li><a href="#"><span class="uk-badge">没有了</span></a></li>
         {% endif %}
   
         {% if paginator.next_page %}
             <li><a href="/blog/page{{ paginator.next_page }}"><span class="uk-badge">下一页</span></a></li>
         {% else %}
-            <li><span class="uk-badge">没有了</span></li>
+            <li><a href="#"><span class="uk-badge">没有了</span></a></li>
         {% endif %}
         </ul>
         </div>
