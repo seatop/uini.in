@@ -29,18 +29,18 @@ title: blog
         <ul class="uk-nav uk-nav-default">
         {% if paginator.previous_page %}
             {% if paginator.previous_page == 1 %}
-                <li><a href="/blog/"><span class="uk-badage">上一页</span></a></li>
+                <li><a href="/blog/"><span class="uk-badge">上一页</span></a></li>
             {% else %}
-                <li><a href="/blog/page{{ paginator.previous_page }}"><span class="uk-badage">上一页</a></span></a></li>
+                <li><a href="/blog/page{{ paginator.previous_page }}"><span class="uk-badge">上一页</a></span></a></li>
             {% endif %}
         {% else %}
-            <li><span class="uk-badage">首页</span></li>
+            <li><span class="uk-badge">首页</span></li>
         {% endif %}
   
         {% if paginator.next_page %}
-            <li><a href="/blog/page{{ paginator.next_page }}"><span class="uk-badage">下一页</span></a></li>
+            <li><a href="/blog/page{{ paginator.next_page }}"><span class="uk-badge">下一页</span></a></li>
         {% else %}
-            <li><span class="uk-badage">末页</span></li>
+            <li><span class="uk-badge">末页</span></li>
         {% endif %}
         </ul>
         </div>
