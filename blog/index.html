@@ -21,6 +21,20 @@ title: 文章列表
 		</div>
          {% endfor %}
 
+        <div uk-margin>
+            {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+                <a class="uk-button uk-button-default" href="/blog/"> 上一页 </a>
+            {% else %}
+                <a class="uk-button uk-button-default" href="/blog/page{{ paginator.previous_page }}"> 上一页 </a>
+            {% endif %}        
+        {% endif %}
+  
+        {% if paginator.next_page %}
+            <a class="uk-button uk-button-default" href="/blog/page{{ paginator.next_page }}"> 下一页 </a>
+        {% endif %}
+
+        </div>
 		
     </div>
     
