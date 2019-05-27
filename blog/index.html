@@ -43,7 +43,7 @@ title: 文章列表
             <ul class="uk-nav uk-nav-default">
                 <li><a> 分类 </a></li>
             {% for category in site.categories %}
-                <li><a href="{{ site.baseurl}}/category/{{ category.first }}.html">{{category.first}}（{{category.last.size}}）</a></li>
+                <li><a href="{{ site.baseurl}}/category.html?cat={{ category.first }}">{{category.first}}（{{category.last.size}}）</a></li>
             {% endfor %}
             </ul>
         </div>
