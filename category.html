@@ -12,7 +12,7 @@ title: 文章列表
     <div>
         
 {% for category in site.categories %}
-<h2>{{ category | first }}</h2>
+<h3><a href="#{{ category | first }}">{{ category | first }}</a></h3>
 </span>{{ category | last | size }}</span>
 <ul class="arc-list">
     {% for post in category.last %}
