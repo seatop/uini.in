@@ -38,8 +38,8 @@
     <div>
     	<div class="uk-card uk-card-default uk-card-body">
     		<article class="uk-article">
-			    <h1 class="uk-article-title">{{ page.title }}</h1>
-			    <p class="uk-article-meta"><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></p>
+			    <h1 class="uk-article-title uk-background-primary">{{ page.title }}</h1>
+			    <p class="uk-article-meta"><time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time></p>
 			    <div>{{ content }}</div>
 			</article>
 		</div>
