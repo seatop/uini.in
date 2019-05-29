@@ -37,10 +37,11 @@
         
     <div>
     	<div class="uk-card uk-card-default uk-card-body">
-        {{page.title}}
-		</div>
-		<div class="uk-card uk-card-default uk-card-body">
-        {{page.content}}
+    		<article class="uk-article">
+			    <h1 class="uk-article-title">{{ page.title }}</h1>
+			    <p class="uk-article-meta"><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></p>
+			    <div>{{ content }}</div>
+			</article>
 		</div>
     </div>
     
