@@ -12,11 +12,10 @@ title: 文章列表
     <div>
         {% for category in site.categories %}
         <div class="uk-card uk-card-default uk-card-body uk-margin-bottom">
-            <h3 class="uk-card-title"><a class="uk-link-heading" name="#{{ category | first }}">{{ category | first }}</a></span>{{ category | last | size }}</span></h3>
+            <h3 class="uk-card-title"><a class="uk-link-heading" name="{{ category | first }}">{{ category | first }}</a></span>{{ category | last | size }}</span></h3>
             <dl class="uk-description-list">
                 {% for post in category.last %}
-                <dt><a href="{{ post.url }}">{{ post.title }}</a></dt>
-                <dd>{{ post.date | date:"%d/%m/%Y"}}</dd>
+                <dt><a href="{{ post.url }}">{{ post.title }}</a>{{ post.date | date:"%Y - %m - %d"}}</dt>
                 {% endfor %}
             </dl>
         </div>
