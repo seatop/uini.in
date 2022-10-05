@@ -99,3 +99,7 @@ var gc = document.getElementById("graph");
 gc.ondblclick = function(){
 	draw(nt());
 }
+
+gc.onclick = function(){
+	document.location = "ra.html";
+}
