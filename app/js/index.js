@@ -96,9 +96,17 @@ function nt(){
 draw(" 000 0000 0000");
 
 var gc = document.getElementById("graph");
+var gi = 0;
 gc.ondblclick = function(){
-	draw(nt());
+	if(gi == 0){
+		draw(nt());
+		gi = 1;
+	}else{
+		draw(" 000 0000 0000");
+		gi = 0;
+	}	
 }
+
 
 gc.onclick = function(){
 	document.location = "ra.html";
