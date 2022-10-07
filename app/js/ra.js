@@ -1,10 +1,10 @@
 var gr = document.createElement("canvas");
-gr.id = "graph";
+gr.id = "ga";
 gr.width = 800;
 gr.height = 800;
 document.body.appendChild(gr);
 
-var graph = document.getElementById("graph");
+var graph = document.getElementById("ga");
 
 graph.onclick = function(){
 	document.location = "index.html";
