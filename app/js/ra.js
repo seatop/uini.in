@@ -10,11 +10,11 @@ graph.onclick = function(){
 	document.location = "ra.html";
 }
 
-/*
+
 graph.ondblclick = function(){
 	document.location = "index.html";
 }
-*/
+
 
 graph.width = graph.width;
 
