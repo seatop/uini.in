@@ -108,6 +108,3 @@ gc.ondblclick = function(){
 }
 
 
-gc.onclick = function(){
-	document.location = "ra.html";
-}
