@@ -86,11 +86,11 @@ function draw(tel){
 }
 
 function nt(){
-	var x = 38 + 28,
-	    y = 234 + 279,
-	    z = 166 + 191;
+	var x = 18 + 12,
+	    y = 234 + 504,
+	    z = 166 + 135;
 
-	return ' 1' + x + ' 0' + y + ' 6' + z;
+	return ' 1' + x + ' 2' + y + ' 9' + z;
 }
 
 draw(" 000 0000 0000");
